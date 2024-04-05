@@ -15,6 +15,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 print("Here is your easy password: ",end="")
 for letter in range(0,nr_letters):
   random_letter = random.randint(0,len(letters)-1)
+  #random_letter = random.choice(letters) to useable
   print(letters[random_letter],end="")
 for symbol in range(0,nr_symbols):
   random_symbol = random.randint(0,len(symbols)-1)
@@ -40,3 +41,4 @@ for number in range(0,nr_numbers):
 random.shuffle(password)
 for char in password:
   print(char,end="")
+ # Finally man can random.shuffle() use, shuffele() make mix
